@@ -479,6 +479,7 @@ func (rp *Parser) parseEnclosure(p *xpp.XMLPullParser) (enclosure *Enclosure, er
 	enclosure.URL = p.Attribute("url")
 	enclosure.Length = p.Attribute("length")
 	enclosure.Type = p.Attribute("type")
+	enclosure.Caption = p.Attribute("caption")
 
 	// Ignore any enclosure text
 	_, err = p.NextText()

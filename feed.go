@@ -84,9 +84,10 @@ type Image struct {
 
 // Enclosure is a file associated with a given Item.
 type Enclosure struct {
-	URL    string `json:"url,omitempty"`
-	Length string `json:"length,omitempty"`
-	Type   string `json:"type,omitempty"`
+	URL     string `json:"url,omitempty"`
+	Length  string `json:"length,omitempty"`
+	Type    string `json:"type,omitempty"`
+	Caption string `json:"caption,omitempty"`
 }
 
 // Len returns the length of Items.
