@@ -75,9 +75,10 @@ type Image struct {
 // Enclosure is a media object that is attached to
 // the item
 type Enclosure struct {
-	URL    string `json:"url,omitempty"`
-	Length string `json:"length,omitempty"`
-	Type   string `json:"type,omitempty"`
+	URL     string `json:"url,omitempty"`
+	Length  string `json:"length,omitempty"`
+	Type    string `json:"type,omitempty"`
+	Caption string `json:"caption,omitempty"`
 }
 
 // GUID is a unique identifier for an item

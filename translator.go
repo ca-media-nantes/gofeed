@@ -442,6 +442,7 @@ func (t *DefaultRSSTranslator) translateItemEnclosures(rssItem *rss.Item) (enclo
 		e.URL = rssItem.Enclosure.URL
 		e.Type = rssItem.Enclosure.Type
 		e.Length = rssItem.Enclosure.Length
+		e.Caption = rssItem.Enclosure.Caption
 		enclosures = []*Enclosure{e}
 	}
 	return
